@@ -1,4 +1,27 @@
-def join_nested_strings(src)
-  # src will be an Array of Arrays of Strings and Integers
-  # Combine all Strings present in the AoA into a single value and return it
-end
+def join_nested_strings(mixed_data)
+  array = mixed_data.flatten
+  array.delete_if {|x| x.is_a? Integer}
+  return array.join(" ")
+end  
+
+
+
+
+
+
+
+
+#   if mixed_data_1 === Class
+# array.each do |x| 
+#   if x === String(" ")
+#     p x
+#     end
+# end
+
+# mixed_data_1 = [] 
+# array.each do |x| 
+# # array.delete_if {|x| x.is_a? Integer}
+# end 
+
+
+
